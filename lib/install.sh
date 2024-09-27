@@ -27,7 +27,7 @@ if [ -d "./compose" ]; then
   mv compose/* ./ 2>/dev/null
   mv compose/.gitignore ./ 2>/dev/null
   mv compose/.vscode ./ 2>/dev/null
-
+  
   # 删除 compose 目录和 .git 文件夹
   rm -rf compose .git
 
@@ -46,7 +46,7 @@ mkdir -p ~/.composer ~/.ssh
 if [ -f ~/.composer/auth.json ]; then
   echo "Updating ~/.composer/auth.json permissions..."
   chown $(id -u):$(id -g) ~/.composer/auth.json
-  chmod 600 ~/.composer.auth.json
+  chmod 600 ~/.composer/auth.json
 fi
 
 echo "Script execution completed."
