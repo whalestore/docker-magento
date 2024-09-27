@@ -2,7 +2,7 @@
 git init -qqq
 git remote add origin https://github.com/whalestore/docker-magento
 git fetch origin -qqq
-git checkout origin/master -- compose
+git checkout origin/release/next -- compose
 
 if [ -d "./bin" ]; then
   echo "Error: The current directory is not empty. Please remove all contents within this directory and try again."
