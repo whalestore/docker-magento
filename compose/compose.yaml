@@ -14,8 +14,8 @@ services:
   app:
     image: markoshust/magento-nginx:1.24-0
     ports:
-      - "3377:8000"
-      - "37433:8443"
+      - "80:8000"
+      - "433:8443"
     volumes: &appvolumes
       - ~/.composer:/var/www/.composer:cached
       - ~/.ssh/id_rsa:/var/www/.ssh/id_rsa:cached
